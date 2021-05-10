@@ -1,5 +1,7 @@
-### simpleANSI
+## simpleANSI
 This is a simple wrapper library for ANSI escape codes.
+GitHub: https://github.com/AwesomeCronk/simpleANSI
+PyPI: https://pypi.org/project/simpleANSI/0.1.0/
 
 # Installation
 `pip install simpleANSI`

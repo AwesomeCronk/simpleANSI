@@ -7,9 +7,9 @@ with open('HISTORY.md') as HISTORYFile:
     HISTORY = HISTORYFile.read()
     
 setup_args = {'name': 'simpleANSI',
-              'version': '0.1.0',
+              'version': '1.0.0',
               'description': 'A simple wrapper for ANSI escape codes',
-              'long_description_type': 'text/markdown',
+              'long_description_content_type': 'text/markdown',
               'long_description': README + '\n\n' + HISTORY,
               'license': 'MIT',
               'packages': find_packages(),
