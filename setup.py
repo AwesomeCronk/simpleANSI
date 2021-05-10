@@ -20,7 +20,8 @@ setup_args = {'name': 'simpleANSI',
               'download_url': 'https://pypi.org/project/simpleANSI'
     }
 
-install_requires = []
+install_requires = ['ctypes']
 
 if __name__ == '__main__':
     setup(**setup_args, install_requires = install_requires)
+    
