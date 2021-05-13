@@ -3,13 +3,13 @@ This is a simple wrapper library for ANSI escape codes.
 
 GitHub: https://github.com/AwesomeCronk/simpleANSI
 
-PyPI: https://pypi.org/project/simpleANSI/0.1.0/
+PyPI: https://pypi.org/project/simpleANSI/
 
 # Installation
 `pip install simpleANSI`
 
 # Functionality
-This is the directory of the package. Functions are denoted as `function(args)`. Constants are denoted as `constant = value`. Anything with a listing under it is a module. All functions under submodules return a string containing the proper escape codes. This string must be printed with `print(<function>(*args), end = '')` to achieve the desired effect. The only function that does not behave like this is `simpleANSI.conhostEnableANSI()`. This function is required on windows to enable ANSI escapes in a conhost terminal (the default terminal).
+This is the directory of the package. Functions are denoted as `function(args)`. Constants are denoted as `constant = value`. Anything with a listing under it is a submodule. All functions under submodules return a string containing the proper escape codes. This string must be printed with `print(<function>(*args), end = '')` to achieve the desired effect. The only function that does not behave like this is `simpleANSI.conhostEnableANSI()`. This function is required on windows to enable ANSI escapes in a conhost terminal (the default terminal).
 ```
 simpleANSI
 |-conhostEnableANSI()
