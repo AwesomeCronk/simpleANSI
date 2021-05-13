@@ -1,37 +1,39 @@
 ## simpleANSI
 This is a simple wrapper library for ANSI escape codes.
+
 GitHub: https://github.com/AwesomeCronk/simpleANSI
+
 PyPI: https://pypi.org/project/simpleANSI/0.1.0/
 
 # Installation
 `pip install simpleANSI`
 
 # Functionality
-This is the directory of the package. Functions are denoted as `function(args)`. Constants are denoted as `constant = value`. Anything with a listing under it is a module.
+This is the directory of the package. Functions are denoted as `function(args)`. Constants are denoted as `constant = value`. Anything with a listing under it is a module. All functions under submodules return a string containing the proper escape codes. This string must be printed with `print(<function>(*args), end = '')` to achieve the desired effect. The only function that does not behave like this is `simpleANSI.conhostEnableANSI()`. This function is required on windows to enable ANSI escapes in a conhost terminal (the default terminal).
 ```
 simpleANSI
 |-conhostEnableANSI()
 |-clear
-| |-Screen()
-| |-ScreenToEnd()
-| |-ScreenToBeg()
-| |-EntireScree()
-| |-Line()
-| |-LineToEnd()
-| |-LineToBeg()
-| `-EntireLine()
+| |-screen()
+| |-screenToEnd()
+| |-screenToBeg()
+| |-entireScree()
+| |-line()
+| |-lineToEnd()
+| |-lineToBeg()
+| `-entireLine()
 |-cursor
-| |-Home()
-| |-MoveTo(line, column)
-| |-MoveUpBy(lines)
-| |-MoveDownBy(lines)
-| |-MoveRightBy(columns)
-| |-MoveLeftBy(columns)
-| |-MoveBegNext(lines)
-| |-MoveBegPrev(lines)
-| |-MoveToCol(column)
-| |-SavePos()
-| `-RestorePos()
+| |-home()
+| |-moveTo(line, column)
+| |-moveUpBy(lines)
+| |-moveDownBy(lines)
+| |-moveRightBy(columns)
+| |-moveLeftBy(columns)
+| |-moveBegNext(lines)
+| |-moveBegPrev(lines)
+| |-moveToCol(column)
+| |-savePos()
+| `-restorePos()
 `-graphics
   |-normal = 0
   |-bold = 1

@@ -1,24 +1,24 @@
 # Clear Controls:
-def Screen():
+def screen():
     return '\x1b[J'
 
-def ScreenToEnd():
+def screenToEnd():
     return '\x1b[0J'
 
-def ScreenToBeg():
+def screenToBeg():
     return '\x1b[1J'
 
-def EntireScreen():
+def entireScreen():
     return '\x1b[2J'
 
-def Line():
+def line():
     return '\x1b[K'
 
-def LineToEnd():
+def lineToEnd():
     return '\x1b[0K'
 
-def LineToBeg():
+def lineToBeg():
     return '\x1b[1K'
 
-def EntireLine():
+def entireLine():
     return '\x1b[2K'

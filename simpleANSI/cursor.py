@@ -1,33 +1,33 @@
 # Cursor Controls:
-def Home():
+def home():
     return '\x1b[H'
 
-def MoveTo(line, column):
+def moveTo(column, line):
     return '\x1b[{};{}H'.format(line,column)
 
-def MoveUpBy(lines):
+def moveUpBy(lines):
     return '\x1b[{}A'.format(lines)
 
-def MoveDownBy(lines):
+def moveDownBy(lines):
     return '\x1b[{}B'.format(lines)
 
-def MoveRightBy(columns):
+def moveRightBy(columns):
     return '\x1b[{}C'.format(columns)
 
-def MoveLeftBy(columns):
+def moveLeftBy(columns):
     return '\x1b[{}D'.format(columns)
 
-def MoveBegNext(lines):
+def moveBegNext(lines):
     return '\x1b[{}E'.format(lines)
 
-def MoveBegPrev(lines):
+def moveBegPrev(lines):
     return '\x1b[{}F'.format(lines)
 
-def MoveToCol(column):
+def moveToCol(column):
     return '\x1b[{}G'.format(column)
 
-def SavePos():
+def savePos():
     return '\x1b[s'
 
-def RestorePos():
+def restorePos():
     return '\x1b[u'
